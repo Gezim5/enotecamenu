@@ -6,11 +6,13 @@ body {
     color: white;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    background-size: cover;  /* Ensures background stretches to cover the screen */
 }
 
 html, body {
     width: 100%;
     overflow-x: hidden !important;
+    height: 100%;
 }
 
 /* Realistic Snow */
@@ -78,7 +80,6 @@ header {
     height: auto;
     margin-bottom: 15px;
     filter: drop-shadow(0 0 2px goldenrod);
-
 }
 
 @keyframes floatLogo {
@@ -145,6 +146,7 @@ header::after { top: 20px; right: 20%; }
     background: rgba(255,255,255,0.12);
     padding: 15px;
     backdrop-filter: blur(8px);
+    width: 100%;
 }
 
 .menu-nav a {
@@ -169,6 +171,7 @@ header::after { top: 20px; right: 20%; }
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 35px;
+    justify-items: center;  /* Ensures content is centered in each column */
 }
 
 /* Menu column */
@@ -246,14 +249,12 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-
     padding: 40px 20px;
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(8px);
     border-top: 2px solid rgba(255,255,255,0.2);
     font-size: 1.2rem;
     color: #fff;
-
     position: relative;
     overflow: hidden;
 }
@@ -319,6 +320,7 @@ footer::after { top: 5px; right: 25%; }
     #menu-section {
         grid-template-columns: 1fr;
         width: 95%;
+        justify-items: center;  /* Ensure content is centered */
     }
 
     .menu-column {
